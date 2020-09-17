@@ -1,0 +1,51 @@
+
+header, footer {
+    background-color: #234680;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    font-family: "Lato",Helvetica, sans-serif;
+    color: white;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 2rem;
+}
+
+header img {
+    float: right;
+    margin-right: 30px;
+    margin-top: -80px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+    0 6px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+body {
+    margin: 30px;
+}
+h2 {
+    margin-left: 30px;
+    font-size: 2em;
+    font-family: "Klint Std", Helvetica, sans-serif;
+    color: #515151;
+}
+
+ul {
+    margin-left: 50px;
+    font-size: 1em;
+    font-family: "Lato", Helvetica, sans-serif;
+    line-height: 2.3rem;
+}
+
+#footerlink {
+    color: white;
+}
+#modified {
+    color: #fff192;
+}
+
