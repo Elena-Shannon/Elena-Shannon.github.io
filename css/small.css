@@ -1,10 +1,9 @@
 
 header, footer {
     background-color: #234680;
-    border-radius: 10px;
     text-align: center;
     padding: 30px;
-    font-family: 'Lato',Helvetica, sans-serif;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
     color: white;
 }
 
@@ -13,31 +12,28 @@ main {
 }
 
 h1 {
-    font-size: 3.2em;
+    font-size: 2.2em;
     line-height: 2rem;
+    padding-bottom: 20px;
 }
 
 header img {
-    float: right;
-    margin-right: 30px;
-    margin-top: -80px;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5),
-    0 6px 50px 0 rgba(0, 0, 0, 0.5);
+    height: auto;
 }
 
 body {
     margin: 30px;
 }
+
 h2 {
     padding-left: 30px;
-    font-size: 2em;
-    font-family: 'Klint Std', Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: 'Ubuntu', Helvetica, sans-serif;
     color: #515151;
 }
 
 ul {
-    padding-left: 80px;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'Lato', Helvetica, sans-serif;
     line-height: 2.3rem;
 }
