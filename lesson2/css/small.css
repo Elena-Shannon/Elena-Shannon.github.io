@@ -18,11 +18,9 @@ main {
 
 section {
 background-color: #ededed;
-padding: 15px;
 margin: 10px;
 border-radius: 10px;
 border: solid grey 2px;
-border-top: 55px solid rgb(107, 142, 35);
 }
 
 section p {
@@ -33,13 +31,20 @@ section p {
 h3 {
     color: white;
     font-family: 'Open Sans', Helvetica, sans-serif;
-    margin-top:-50px;
     font-weight: bold;
+    background-color: rgb(107, 142, 35);
+    padding: 2rem;
+    margin: 0;
+    border-radius: 8px 8px 0px 0px;
+    text-align: center;
+}
+
+.content {
+    padding: 10px;
 }
 
 h4 {
     font-family: 'Open Sans', Helvetica, sans-serif;
-    padding-top: 20px;
 }
 
 a {
