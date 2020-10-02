@@ -1,0 +1,126 @@
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header {
+    color: white;
+    text-align: center;
+    background-color:#6e6e6e;
+    padding: 20px;
+
+}
+
+main {
+    padding: 20px 20px 40px 20px;
+}
+
+h2 {
+    color: #001f43;
+}
+
+nav {
+    background-color: #031E27;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color:#6e6e6e;
+}
+
+nav ul li.active a {
+    background-color: #001f43;
+    color: #fff;
+}
+
+p, nav, li, dl {
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+#centeredlogo {
+     display: flex;
+    justify-content: center;
+}
+
+.colorbold, a, h3 {
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(0, 128, 0);
+}
+
+.justify {
+    display: flex;
+    justify-content: center;
+}
+
+#imagesmall {
+    width: 300px;
+    height: auto;
+}
+
+#persona {
+     width: 300px;
+     height: auto;
+}
+
+
+#titlefont {
+font-family: "Raleway", Helvetica, sans-serif;
+font-size: 55pt;
+font-weight:800;
+color: #bfe6ff;
+}
+
+#motto {
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 18pt;
+    color: #003664;
+}
+
+#maintext {
+    font-family:"Lato", Helvetica,sans-serif;
+    font-size: 14pt;
+    color: #003664;
+}
+
+#mainheader {
+    font-family: "Merriweather", Georgia, serif;
+    font-size: 30pt;
+    color: #f49f07;
+}
+
+#footertext {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight:600;
+    color: #003664;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
