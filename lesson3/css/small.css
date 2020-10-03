@@ -10,7 +10,7 @@ html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-header {
+header, footer {
     color: white;
     text-align: center;
     background-color:#6e6e6e;
