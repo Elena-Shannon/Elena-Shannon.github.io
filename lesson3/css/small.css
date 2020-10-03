@@ -37,12 +37,12 @@ nav ul {
 }
 
 nav ul li a {
-    display: block;
+    display: flex;
     color: #fff;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
-    text-align: center;
+    justify-content: center;
 }
 
 
