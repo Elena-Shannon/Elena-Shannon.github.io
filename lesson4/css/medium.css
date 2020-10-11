@@ -1,0 +1,28 @@
+@media only screen and (min-width: 37.5em) {
+
+    header img {
+        float: left;
+        margin-right: 20px;
+        width: 130px;
+    }
+
+    header h1 {
+        font-size: 3.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .motto {
+        font-size: 1em;
+    }
+
+    footer {
+        font-weight: normal;
+        color: #fff;
+        font-family: "Merriweather", Times, serif;
+        font-size: 0.8rem;
+     }
+
+}
