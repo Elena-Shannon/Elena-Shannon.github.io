@@ -1,0 +1,61 @@
+@media only screen and (min-width: 64rem) {
+     nav button {
+         display: none;
+     }
+
+      nav ul.hide {
+          display: flex;
+      }
+
+      nav ul li {
+          flex: 1 1 100%;
+           align-items: center;
+           justify-content: center;
+      }
+
+     nav ul {
+         margin-left: 2%;
+     }
+
+     nav ul li {
+         float: left;
+     }
+
+     nav ul li a {
+         border: none;
+         padding: 0.6rem 1rem;
+     }
+
+     .motto {
+         font-size: 1.1rem;
+     }
+
+     .herodiv {
+           width: 1001px;
+           height: 370px;
+     }
+
+     .summary {
+         padding: 1.8rem;
+         top: 75px;
+         left: 75px;
+     }
+
+    .boys {
+         float: right;
+         max-width: 450px;
+         height: auto;
+     }
+
+    /* .flex_container {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+     }
+
+     .box {
+          width: 50%;
+          margin: 10px;
+     }*/
+
+     }
