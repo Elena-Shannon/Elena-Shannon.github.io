@@ -18,15 +18,6 @@ body {
     border-radius: 30px;
 }
 
-main {
-    font-size: 16px;
-    font-family: "Lato", Helvetica, sans-serif;
-    padding: 1em;
-    max-width: 1028px;
-    margin: 0 auto;
-}
-
-
 /*----------- HEADER --------------*/
 header, footer {
     padding: 1rem 2%;
@@ -107,7 +98,12 @@ nav ul.hide {
 }
 
 /*----------- MAIN --------------*/
+
 main {
+    font-size: 16px;
+    font-family: "Lato", Helvetica, sans-serif;
+    max-width: 1028px;
+    margin: 0 auto;
     padding: 0 1%;
     min-height: 10rem;
 }
