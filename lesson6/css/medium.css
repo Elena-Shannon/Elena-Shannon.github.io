@@ -1,0 +1,82 @@
+@media only screen and (min-width: 37.5em) {
+
+    header img {
+        float: left;
+        margin-right: 20px;
+        width: 130px;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .motto {
+        font-size: 1em;
+    }
+
+    section.forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-bottom: 30px;
+        padding: 0 50px;
+    }
+section.forecast div {
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+section.forecast div h5 {
+    background-color: #001f43;
+    color:white;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+
+.more_content {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     align-items: center;
+}
+
+    footer {
+        font-weight: normal;
+        color: #fff;
+        font-family: "Merriweather", Times, serif;
+        font-size: 0.8rem;
+     }
+
+     .summary {
+          padding: 1.8rem;
+          top: 40px;
+          left: 80px;
+     }
+
+     .summary h3 {
+         text-decoration: underline;
+         margin: 3px;
+     }
+
+     .summary p {
+         margin: 10px;
+     }
+
+     .phone {
+         display: block;
+     }
+
+     .boys_photo {
+         float: right;
+         margin: 1rem;
+         max-width: 450px;
+         height: auto;
+     }
+
+     .local_image {
+         display: block;
+     }
+}

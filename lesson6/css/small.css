@@ -1,0 +1,248 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+main {
+    font-size: 16px;
+    font-family: "Lato", Helvetica, sans-serif;
+    padding: 1em;
+    max-width: 1028px;
+    margin: 0 auto;
+}
+
+
+/*----------- HEADER --------------*/
+header, footer {
+    padding: 1rem 2%;
+    background-color: #003664;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+header img {
+    width:110px;
+    height:auto;
+}
+
+header h1 {
+    margin: .5rem;
+    font-weight: 800;
+    color: #bfe6ff;
+    font-family: "Raleway", Helvetica,sans-serif;
+    font-size: 2.3rem;
+
+}
+
+.motto {
+    margin: 0;
+    font-weight: normal;
+    color: #fff;
+    font-family: "Merriweather", Times, serif;
+    font-size: 0.8rem;
+}
+
+/*----------- NAVIGATION --------------*/
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav {
+    background-color: #b3b3b3;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: flex;
+    color: black;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    justify-content: center;
+    font-family: "Lato", Helvetica, sans-serif;
+}
+
+nav ul li a:hover {
+    background-color :#001f43;
+    color: #fff;
+}
+
+nav ul li.active a {
+    background-color: #bfe6ff;
+    color: black;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 1%;
+    min-height: 10rem;
+}
+
+section.forecast {
+    display: none;
+}
+
+.content {
+    display: block;
+    margin: 10px auto;
+    padding: 25px;
+    color: black;
+    background-color: #ececec;
+
+}
+
+.more_content {
+    margin: 10px auto;
+    padding: 25px;
+    color: black;
+    background-color: #bfe6ff;
+}
+
+    .herodiv {
+        margin: 10px auto;
+        position: relative;
+    }
+
+    .herodiv img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .weathersum {
+        position: relative;
+
+    }
+
+    .summary {
+        position: absolute;
+        top: 15px;
+        left: 5px;
+        background: rgba(0, 31, 67, .7);
+        color: white;
+        border: 1px solid #000;
+        padding: 0.5rem;
+        box-shadow: 0 0 30px #111;
+         font-family: "Lato", Helvetica, sans-serif;
+    }
+
+    .summary h3 {
+        text-decoration: underline;
+        margin: 1px;
+    }
+
+    .summary p {
+        margin: 0;
+    }
+
+    .difcolor {
+        color: #fbbd17;
+    }
+
+    .phone {
+        display: none;
+    }
+
+h2 {
+    font-family: "Merriweather", Times, serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #c57e00;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    font-weight: normal;
+    color: #fff;
+    font-family: "Merriweather", Times, serif;
+    font-size: 0.6rem;
+    text-align: center;
+    max-width: 1028px;
+    padding: 20px 0px 20px 0px;
+    margin: auto;
+}
+
+#currentdate {
+    padding: 10px;
+}
+
+ .boys_photo {
+     float: none;
+      width: 100%;
+      height: auto;
+ }
+
+section h3 {
+   font-family: "Merriweather", Times, serif;
+   font-size: 1.1rem;
+}
+
+.local_image {
+    display: none;
+}
+
+.centered_position {
+   text-align: center;
+}
+
+div#message {
+     background-color: #f49f07;
+     padding: 15px;
+     text-align: center;
+}
+
+div.showme {
+    display: block;
+}
+
+div.hideme {
+    display: none;
+}
+
+.image_center {
+     display: flex;
+     justify-content: center;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

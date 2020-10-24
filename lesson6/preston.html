@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description"
+        content="The weather website assignment for Elena Shannon for WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+        <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+     <link rel="stylesheet" href="css/large.css">
+
+    <title>WDD230 Preston Page</title>
+</head>
+
+<body>
+     <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header class="clearfix">
+        <picture>
+            <source media="(max-width: 640px)" srcset="images/weather_logo85.png">
+            <source media="(max-width: 961px)" srcset="images/weather_logo110.png">
+            <img src="images/weather-logo.png" alt="logo">
+        </picture>
+        <section>
+            <h1>Idahoan Forecast</h1>
+        <div class="motto">Delivering the most accurate weather since 1998</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="">Home</a></li>
+            <li class="active"><a href="">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston City, Idaho</h2>
+        <div class="weathersum">
+                <picture class="image_center">
+                     <source media="(max-width: 420px)" srcset="images/heroimage_275.jpg">
+                    <source media="(max-width: 640px)" srcset="images/heroimage_480.jpg">
+                    <source media="(max-width: 961px)" srcset="images/heroimage_640.jpg">
+                    <img src="images/heroimage.jpg" alt="sun and mountain view">
+                </picture>
+
+              <section class="summary">
+                    <h3>Weather Summary</h3>
+                    <p>Currently: <span>Sunny</span></p>
+                    <p>High: <span id="highT">49</span>&deg; F</p>
+                     <p>Wind Speed: <span id="windSpeed">8</span> mph</p>
+                    <p>Wind Chill: <span id="windChill"></span></p>
+                    <p>Humidity: <span>39%</span></p>
+        </section>
+
+        </div>
+
+
+            <h2 class="phone"> 5 day Forecast</h2>
+            <section class="forecast">
+                <div>
+                  <h5>Monday</h5>
+                  <img src="images/iconweather.png" alt="sun and cloud icon">
+                  <p>65&deg;</p>
+                </div>
+                <div>
+                    <h5>Tuesday</h5>
+                    <img src="images/iconweather.png" alt="sun and cloud icon">
+                    <p>69&deg;</p>
+                </div>
+                <div>
+                    <h5>Wednesday</h5>
+                    <img src="images/iconweather.png" alt="sun and cloud icon">
+                    <p>57&deg;</p>
+                </div>
+                <div>
+                    <h5>Thursday</h5>
+                    <img src="images/iconweather.png" alt="sun and cloud icon">
+                    <p>54&deg;</p>
+                </div>
+                <div>
+                    <h5>Friday</h5>
+                    <img src="images/iconweather.png" alt="sun and cloud icon">
+                    <p>59&deg;</p>
+                </div>
+            </section>
+
+            <section class="content">
+
+                  <picture>
+                      <source media="(max-width: 640px)" srcset="images/boys_250.jpg">
+                      <source media="(max-width: 961px)" srcset="images/boys_350.jpg">
+                      <img class="boys_photo" src="images/boys.jpg" alt="two boys running">
+                  </picture>
+
+                    <h3>Little Fish Haven, Idaho, is paradise for residents</h3>
+
+                    <p>FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw
+                        beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural
+                        lake. </p>
+
+                    <p>In winter the hills outside this small paradise echo with the sharp whine of snow machines and in
+                        the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing
+                        poles.</p>
+
+                    <p> But they don't live there. It's different living in Fish Haven.</p>
+
+                    <p>The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's west
+                        side and the mountains.</p>
+
+                    <p>It's not technically a city or a town, it's really nothing more than the proverbial wide spot
+                        in the road. But people call it a town even though there isn't a city council, just the Bear
+                        Lake County Commission that oversees development there. Only 50 to 100 people call it home,
+                        depending on the weather. Vic Tilt, co-owner of Gladys' Place, is one of the few year-around residents and said the population drops quickly when things get cold. The winter evacuation isn't much of a worry for Tilt, 60, because his store is the only one around. The nearest other store is in Montpelier, about 45 minutes away ...
+                        <a href="https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents" target="blank">continue
+                            to full article here</a>
+                    </p>
+           </section>
+
+
+
+
+
+            <div class="more_content">
+                 <div class="local_image"><img src="images/map.jpg" alt="local map">
+                </div>
+                <div class="centered_position">
+                    <p>
+                        <strong>Idahoan Forecast</strong>
+                        <br>
+                        &#9925;404 Main Street,
+                        <br>
+                        Fish Haven, ID, 83287</p>
+                    <p> &#9743; (208).888 8888
+                        <br>
+                        &#x2709; contact@idahoanweather.com
+                        <br>
+                        <br>
+                        <a href="http://www.facebook.com"><img src='images/facebook.png' alt="facebook symbol"/></a>
+                        <a href="http://www.pinterest.com"><img src='images/pinterest.png' alt="pinterest symbol"/></a>
+                        <a href="http://www.twitter.com"><img src='images/twitter.png' alt="twitter symbol"/></a>
+                        <a href="http://www.whatsapp.com"><img src='images/whatsapp.png' alt="whatsapp symbol"/></a>
+                  </p>
+                  </div>
+            </div>
+
+
+    </main>
+        <footer>
+            &copy;Idahoan Forecast | Attributions | Elena Shannon |
+            <div id="currentdate"></div>
+        </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weather.js"></script>
+
+</body>
+
+</html>
