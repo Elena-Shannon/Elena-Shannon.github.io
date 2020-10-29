@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description"
+        content="The weather website assignment for Elena Shannon for WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+        <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="lesson7.css/small.css">
+    <link rel="stylesheet" href="lesson7.css/medium.css">
+    <link rel="stylesheet" href="lesson7.css/large.css">
+     <link rel="stylesheet" href="lesson7.css/normalize.css">
+
+    <title>WDD230 Preston Page</title>
+</head>
+
+<body>
+     <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header class="clearfix">
+        <picture>
+            <source media="(max-width: 640px)" srcset="images/weather_logo85.png">
+            <source media="(max-width: 961px)" srcset="images/weather_logo110.png">
+            <img src="images/weather-logo.png" alt="logo">
+        </picture>
+        <section>
+            <h1>Idahoan Forecast</h1>
+        <div class="motto">Delivering the most accurate weather since 1998</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="">Home</a></li>
+            <li><a href="">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li class="active"><a href="">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Weather Gallery</h2>
+        <section>
+                <div class="grid">
+                <figure class="card">
+                    <img src="images/placeholder-2.png" data-src="images/weather_1.jpg" alt="rainbow">
+                    <figcaption class="caption">"Rainbow fields" by Emma Jones</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/placeholder-2.png" data-src="images/weather_2.jpg" alt="fall road">
+                    <figcaption class="caption">Fall Road</figcaption>
+                </figure>
+
+
+                <figure class="card">
+                    <img src="images/placeholder-2.png" data-src="images/weather_3.jpg" alt="dark stormy skies">
+                    <figcaption class="caption">Coming storm</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/placeholder-2.png" data-src="images/weather_4.jpg" alt="fog and forest">
+                    <figcaption class="caption">Foggy forest</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/placeholder-2.png" data-src="images/weather_5.jpg" alt="sunset, forest, snow">
+                    <figcaption class="caption">Snowy sunset</figcaption>
+                </figure>
+
+                <figure class="card">
+                    <img src="images/placeholder-2.png" data-src="images/weather_6.jpg" alt="sunny meadow">
+                    <figcaption class="caption">Sunny meadow</figcaption>
+                </figure>
+
+                 <figure class="card">
+                     <img src="images/placeholder-2.png" data-src="images/weather_7.jpg" alt="forest trees">
+                     <figcaption class="caption">Forest trees</figcaption>
+                 </figure>
+
+                 <figure class="card">
+                     <img src="images/placeholder-2.png" data-src="images/weather_8.jpg" alt="Road in the fall forest">
+                     <figcaption class="caption">Fall colors</figcaption>
+                 </figure>
+
+                 <figure class="card">
+                     <img src="images/placeholder-2.png" data-src="images/weather_9.jpg" alt="sunset and mountain">
+                     <figcaption class="caption">Rocky sunset</figcaption>
+                 </figure>
+             </div>
+        </section>
+
+    </main>
+        <footer>
+            &copy;Idahoan Forecast | Attributions | Elena Shannon |
+            <div id="currentdate"></div>
+        </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="lesson7.js/webfont.js"></script>
+    <script src="lesson7.js/weather.js"></script>
+    <script src="lesson7.js/lazyload.js"></script>
+
+</body>
+
+</html>

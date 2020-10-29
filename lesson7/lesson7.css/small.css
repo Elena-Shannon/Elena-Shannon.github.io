@@ -112,7 +112,7 @@ main {
     min-height: 10rem;
 }
 
-section.forecast {
+/*section.forecast {
     display: none;
 }
 
@@ -172,14 +172,14 @@ section.forecast {
         color: #fbbd17;
     }
 
-    .phone {
+    /*.phone {
         display: none;
     }
 
     .hero {
         width: 100%;
         display: block;
-    }
+    }*/
 
 h2 {
     font-family: "Merriweather", Times, serif;
@@ -205,7 +205,7 @@ footer {
     padding: 10px;
 }
 
- .boys_photo {
+ /*.boys_photo {
      float: none;
       width: 100%;
       height: auto;
@@ -222,7 +222,7 @@ section h3 {
 
 .centered_position {
    text-align: center;
-}
+}*/
 
 div#message {
      background-color: #f49f07;
@@ -242,6 +242,28 @@ div.hideme {
      display: flex;
      justify-content: center;
 }
+
+figure img {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+     justify-content: center;
+     align-items: center;
+}
+
+.caption {
+    padding: 10px;
+     text-align: center;
+}
+
+figure.card {
+    padding: 10px;
+
+}
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
