@@ -176,10 +176,6 @@ section.forecast {
         display: none;
     }
 
-    .hero {
-        width: 100%;
-        display: block;
-    }
 
 h2 {
     font-family: "Merriweather", Times, serif;
@@ -238,10 +234,12 @@ div.hideme {
     display: none;
 }
 
-.image_center {
-     display: flex;
-     justify-content: center;
+
+.im_width {
+    width: 100%;
+    display: block;
 }
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/

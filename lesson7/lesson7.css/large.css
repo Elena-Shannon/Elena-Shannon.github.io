@@ -40,4 +40,13 @@
          box-shadow: 0 0 70px #333;
      }
 
+     figure img {
+         filter: blur(0em);
+         transition: filter 0.5s;
+     }
+
+     figure img[data-src] {
+         filter: blur(0.2em);
+     }
+
  }

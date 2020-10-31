@@ -112,7 +112,7 @@ main {
     min-height: 10rem;
 }
 
-/*section.forecast {
+section.forecast {
     display: none;
 }
 
@@ -172,14 +172,14 @@ main {
         color: #fbbd17;
     }
 
-    /*.phone {
+    .phone {
         display: none;
     }
 
     .hero {
         width: 100%;
         display: block;
-    }*/
+    }
 
 h2 {
     font-family: "Merriweather", Times, serif;
@@ -187,7 +187,7 @@ h2 {
     font-size: 1.4rem;
     color: #c57e00;
     text-align: center;
-    padding: 10px;
+    padding-top: 20px;
 }
 
 footer {
@@ -205,7 +205,7 @@ footer {
     padding: 10px;
 }
 
- /*.boys_photo {
+ .boys_photo {
      float: none;
       width: 100%;
       height: auto;
@@ -222,7 +222,7 @@ section h3 {
 
 .centered_position {
    text-align: center;
-}*/
+}
 
 div#message {
      background-color: #f49f07;
@@ -243,6 +243,10 @@ div.hideme {
      justify-content: center;
 }
 
+figure {
+    margin: 0;
+}
+
 figure img {
     width: 100%;
 }
@@ -250,18 +254,25 @@ figure img {
 .grid {
     display: grid;
     grid-template-columns: 1fr;
+     grid-template-rows: auto;
      justify-content: center;
-     align-items: center;
+     align-content: center;
+     gap: 20px;
+     padding: 10px;
 }
 
 .caption {
-    padding: 10px;
+    padding: 15px;
      text-align: center;
 }
 
 figure.card {
-    padding: 10px;
+    padding: 5px;
+}
 
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
 }
 
 
