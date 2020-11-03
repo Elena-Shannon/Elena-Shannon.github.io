@@ -1,6 +1,7 @@
 table {
     font-family: 'Ubuntu', sans-serif;
-    width: 380px;
+    width: max-content;
+    /*width: 380px;*/
     border-collapse: collapse;
     font-size: 1.4em;
     text-align: center;
