@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="The weather website assignment for Elena Shannon for WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="lesson8.css/normalize.css">
+    <link rel="stylesheet" href="lesson8.css/small.css">
+    <link rel="stylesheet" href="lesson8.css/medium.css">
+    <link rel="stylesheet" href="lesson8.css/large.css">
+
+    <title>WDD230 Preston Page</title>
+</head>
+
+<body>
+    <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header class="clearfix">
+        <picture>
+            <source media="(max-width: 640px)" srcset="images/weather_logo85.png">
+            <source media="(max-width: 961px)" srcset="images/weather_logo110.png">
+            <img src="images/weather-logo.png" alt="logo">
+        </picture>
+        <section>
+            <h1>Idahoan Forecast</h1>
+            <div class="motto">Delivering the most accurate weather since 1998</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="">Home</a></li>
+            <li><a href="">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li class="active"><a href="">Storm Center</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+        <h2>Storm Center Report</h2>
+        <br>
+        <p>Thank you for filling out our storm form. We will get back to you within the next 24 hours.</p>
+        <p>If you are in immediate danger, <strong>call 911!</strong></p>
+        <p> Stay safe out there!</p>
+        </section>
+        <br>
+        <br>
+        <br>
+
+    </main>
+    <footer>
+        &copy;Idahoan Forecast | Attributions | Elena Shannon |
+        <div id="currentdate"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="lesson8.js/webfont.js"></script>
+    <script src="lesson8.js/weather.js"></script>
+
+</body>
+
+</html>
