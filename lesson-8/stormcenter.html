@@ -49,7 +49,7 @@
                  <fieldset>
                      <legend>Contact Information</legend>
                      <label class="top"> Full Name*: <input type="text" name="name" required
-                             pattern="[A-Za-z_ ]{5,}"></label>
+                             pattern="[A-Za-z_ ]{5,}" placeholder="Jane Smith"></label>
                      <label class="top"> Email: <input type="email" name="email" placeholder="someone@gmail.com"></label>
                      <label class="top"> Phone*: <input type="tel" name="phone" placeholder="1235551234" required></label>
                      <label class="top">ZIP Code*: <input type="text" name="zip" placeholder="00000" required /></label>
@@ -61,8 +61,8 @@
                           <label class="top">Storm Date: <input type="date"
                                   name="stormDate"></label>
 
-                        <label class="top" for="type" id="types">Storm Type (choose one):
-                           <input list="storm-type" id="type" name="type"></label>
+                        <label class="top" for="type" id="types">Storm Type:
+                           <input list="storm-type" id="type" name="type" placeholder="Select one..."></label>
                            <datalist id="storm-type">
                                <option value="Flash Flood">
                                <option value="Hail">
@@ -110,7 +110,8 @@
 
                             <label class="top">Additional Comments (max 500 characters): </label>
                            <label>
-                                   <textarea name="message" rows="12" cols="42" maxlength="500"></textarea>
+                                   <textarea name="message" rows="12" cols="42" maxlength="500"
+                                       placeholder="Type here..."></textarea>
                            </label>
                   </fieldset>
         <input type="submit" value="Submit Storm Information" class="submitBtn">
