@@ -1,0 +1,70 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+main {
+    background-color:lightgray;
+    padding: 10px;
+     box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.6);
+}
+
+header,
+main,
+footer,
+.cards {
+    margin: 1em auto;
+    max-width: 1060px;
+}
+
+footer {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #957DAD;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+h2, footer {
+    color:#432278;
+    font-family: 'Segoe UI',
+    Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards {
+     display: grid;
+     grid-template-columns: 1fr;
+     justify-content: center;
+     align-content: center;
+     grid-gap: 0.5em;
+     width: 95%;
+}
+
+.cards img {
+    width: 90%;
+    box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.6);
+    margin: 1em auto;
+}
+
+.cards section {
+  border: 1px solid darkolivegreen;
+  background-color: #efefef;
+  padding: 0.4em;
+  border-radius: 0.2rem;
+}
+
+    @media only screen and (min-width: 35em) {
+        .cards {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media only screen and (min-width: 60em) {
+        .cards {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
