@@ -81,22 +81,6 @@ section.forecast div h5 {
      }
 
 
-       /*section.cards {
-           display: grid;
-           grid-template-columns: 1fr 1fr;
-       }
-
-       /*section.cards:nth-child(odd) img {
-           grid-column: 2;
-       }
-
-
-         div.cards section {
-             height: 20rem;
-         }*/
-
-
-
           /*---------------Towns------------*/
          .cards section {
              display: flex;
@@ -117,80 +101,6 @@ section.forecast div h5 {
          .cards div {
              width: 50%;
          }
-
-          /* div.cards {
-               width: auto;
-           }*/
-
-          /* div.cards {
-              display: grid;
-              grid-template-columns: 1fr 1fr;
-          }
-
-           section:nth-child(even) h3 {
-               grid-column: 2;
-               text-align: center;
-           }
-
-            section:nth-child(even) h4 {
-                grid-column: 2;
-                text-align: center;
-            }
-
-             section:nth-child(even) p {
-                 grid-column: 2;
-                 text-align: center;
-             }
-
-            section:nth-child(even) img {
-                grid-column: 1;
-                grid-row-start: 2;
-                grid-row-end: 5;
-                justify-self: center;
-            }
-
-            section.cards:nth-child(odd) h3, h4, p {
-                grid-column: 1;
-            }
-
-             section.cards:nth-child(odd) img {
-                 grid-column: 2;
-                 grid-row-start: 2;
-                 grid-row-end: 5;
-                 justify-self: center;
-             } */
-
-
-
-         /*section:nth-child(even) h1 {
-             grid-column: 2;
-             margin-bottom: .5rem;
-         }
-
-         section:nth-child(even) img {
-             grid-column: 1;
-             grid-row-start: 2;
-             grid-row-end: 5;
-             justify-self: center;
-         }
-
-         section:nth-child(odd) h4 {
-             margin-bottom: .5rem;
-         }
-
-         section:nth-child(odd) div,
-         p,
-         h1 {
-             grid-column: 1;
-         }
-
-         section:nth-child(odd) img {
-             grid-column: 2;
-             grid-row-start: 2;
-             grid-row-end: 5;
-             justify-self: center;
-         }
-
 
 
 
