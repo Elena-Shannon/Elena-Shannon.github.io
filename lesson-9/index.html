@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="The weather website assignment for Elena Shannon for WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="lesson-9.css/normalize.css">
+    <link rel="stylesheet" href="lesson-9.css/small.css">
+    <link rel="stylesheet" href="lesson-9.css/medium.css">
+    <link rel="stylesheet" href="lesson-9.css/large.css">
+
+    <title>WDD230 Preston Page</title>
+</head>
+
+<body>
+    <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header class="clearfix">
+        <picture>
+            <source media="(max-width: 640px)" srcset="images/weather_logo85.png">
+            <source media="(max-width: 961px)" srcset="images/weather_logo110.png">
+            <img src="images/weather-logo.png" alt="logo">
+        </picture>
+        <section>
+            <h1>Idahoan Forecast</h1>
+            <div class="motto">Delivering the most accurate weather since 1998</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="">Preston</a></li>
+            <li><a href="">Soda Springs</a></li>
+            <li><a href="">Fish Haven</a></li>
+            <li><a href="">Storm Center</a></li>
+            <li><a href="">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Welcome to the Idahoan Forecast Weather Center</h2>
+        <div>
+            <picture class="image_center">
+                <source media="(max-width: 500px)" srcset="images/forest-500.jpg">
+                <source media="(max-width: 800px)" srcset="images/forest-800.jpg">
+                <img class="im_width" src="images/forest.jpg" alt="sun and mountain view">
+            </picture>
+        </div>
+
+        <section>
+            <div class="cards"></div>
+        </section>
+
+            <section class="content">
+            <div class="pullquote">
+            <h2>9 Reasons Why Idaho Can Be a Destination for Outdoor Lovers</h2>
+             <hr>
+            <ul>
+                <li> Bear Lake "Carribean-blue" water</li>
+                 <li> &#9968; </li>
+                <li> Hiking in Schweitzer Mountain Resort</li>
+                 <li> &#9968; </li>
+                <li> Fly-fishing and bike trails in Sun Valley</li>
+                <li> &#9968; </li>
+                <li> ATV riding along Lake Cascade</li>
+                 <li> &#9968; </li>
+                <li> Hot springs at Burgdorf</li>
+                 <li> &#9968; </li>
+                <li> Cruising up the Teton Scenic Byway</li>
+                 <li> &#9968; </li>
+                <li> McCall Winter Carnival</li>
+                <li> &#9968; </li>
+                <li>The largest captive geyser in the world</li>
+                <li> &#9968; </li>
+            </ul>
+            <h4 id="slogan">Check the forecast on our website before you plan your next Idaho trip!</h4>
+        </div>
+        </section>
+
+        <section>
+              <div class="more_content">
+                  <div class="local_image"><img src="images/map.jpeg" alt="local map">
+                  </div>
+                  <div class="centered_position">
+                      <p>
+                          <strong>Idahoan Forecast</strong>
+                          <br>
+                          &#9925;404 Main Street,
+                          <br>
+                          Fish Haven, ID, 83287</p>
+                      <p> &#9743; (208).888 8888
+                          <br>
+                          &#x2709; contact@idahoanweather.com
+                          <br>
+                          <br>
+                          <a href="http://www.facebook.com"><img src='images/facebook.png' alt="facebook symbol" /></a>
+                          <a href="http://www.pinterest.com"><img src='images/pinterest.png'
+                                  alt="pinterest symbol" /></a>
+                          <a href="http://www.twitter.com"><img src='images/twitter.png' alt="twitter symbol" /></a>
+                          <a href="http://www.whatsapp.com"><img src='images/whatsapp.png' alt="whatsapp symbol" /></a>
+                      </p>
+                  </div>
+              </div>
+            </section>
+
+
+    </main>
+    <footer>
+        &copy;Idahoan Forecast | Attributions | Elena Shannon |
+        <a id="frames" href="home-wireframes.html" target="blank">Wireframes</a>
+        <div id="currentdate"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="lesson-9.js/webfont.js"></script>
+    <script src="lesson-9.js/weather.js"></script>
+    <script src="lesson-9.js/json.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+@media only screen and (min-width: 37.5em) {
+
+    header img {
+        float: left;
+        margin-right: 20px;
+        width: 130px;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .motto {
+        font-size: 1em;
+    }
+
+    section.forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-bottom: 30px;
+        padding: 0 50px;
+    }
+section.forecast div {
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+section.forecast div h5 {
+    background-color: #001f43;
+    color:white;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+
+.more_content {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     align-items: center;
+}
+
+    footer {
+        font-weight: normal;
+        color: #fff;
+        font-family: "Merriweather", Times, serif;
+        font-size: 0.8rem;
+     }
+
+     .summary {
+          padding: 1.8rem;
+          top: 40px;
+          left: 80px;
+     }
+
+     .summary h3 {
+         text-decoration: underline;
+         margin: 3px;
+     }
+
+     .summary p {
+         margin: 10px;
+     }
+
+     .phone {
+         display: block;
+     }
+
+     /*.boys_photo {
+         float: right;
+         margin: 1rem;
+         max-width: 450px;
+         height: auto;
+     }*/
+
+     .local_image {
+         display: block;
+     }
+
+
+       /*section.cards {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+       }
+
+       /*section.cards:nth-child(odd) img {
+           grid-column: 2;
+       }
+
+
+         div.cards section {
+             height: 20rem;
+         }*/
+
+
+
+          /*---------------Towns------------*/
+         .cards section {
+             display: flex;
+             flex-direction: row;
+         }
+
+         .cards section:nth-child(2) {
+             flex-direction: row-reverse;
+             grid-row-start: 2;
+             grid-row-end: 3;
+         }
+
+         .cards section img {
+             width: 50%;
+             margin: 1rem;
+         }
+
+         .cards div {
+             width: 50%;
+         }
+
+          /* div.cards {
+               width: auto;
+           }*/
+
+          /* div.cards {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+          }
+
+           section:nth-child(even) h3 {
+               grid-column: 2;
+               text-align: center;
+           }
+
+            section:nth-child(even) h4 {
+                grid-column: 2;
+                text-align: center;
+            }
+
+             section:nth-child(even) p {
+                 grid-column: 2;
+                 text-align: center;
+             }
+
+            section:nth-child(even) img {
+                grid-column: 1;
+                grid-row-start: 2;
+                grid-row-end: 5;
+                justify-self: center;
+            }
+
+            section.cards:nth-child(odd) h3, h4, p {
+                grid-column: 1;
+            }
+
+             section.cards:nth-child(odd) img {
+                 grid-column: 2;
+                 grid-row-start: 2;
+                 grid-row-end: 5;
+                 justify-self: center;
+             } */
+
+
+
+         /*section:nth-child(even) h1 {
+             grid-column: 2;
+             margin-bottom: .5rem;
+         }
+
+         section:nth-child(even) img {
+             grid-column: 1;
+             grid-row-start: 2;
+             grid-row-end: 5;
+             justify-self: center;
+         }
+
+         section:nth-child(odd) h4 {
+             margin-bottom: .5rem;
+         }
+
+         section:nth-child(odd) div,
+         p,
+         h1 {
+             grid-column: 1;
+         }
+
+         section:nth-child(odd) img {
+             grid-column: 2;
+             grid-row-start: 2;
+             grid-row-end: 5;
+             justify-self: center;
+         }
+
+
+
+
+
+
+
+
+        /* --------grid-------- */
+        /*.grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }*/
+    }

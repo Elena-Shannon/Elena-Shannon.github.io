@@ -1,0 +1,73 @@
+@media only screen and (min-width: 64rem) {
+     nav button {
+         display: none;
+     }
+
+      nav ul.hide {
+          display: flex;
+      }
+
+      nav ul li {
+          flex: 1 1 100%;
+           align-items: center;
+           justify-content: center;
+      }
+
+     nav ul {
+         margin-left: 2%;
+     }
+
+     nav ul li {
+         float: left;
+     }
+
+     nav ul li a {
+         border: none;
+         padding: 0.6rem 1rem;
+     }
+
+     .motto {
+         font-size: 1.1rem;
+     }
+
+h2 {
+    font-size: 1.8rem;
+}
+
+/*------Towns-----*/
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.cards section {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards section:nth-child(even) {
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.cards section img {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.cards div {
+    width: 100%;
+}
+
+section:nth-child(1) img {
+     padding-top: 2.2em;
+ }
+
+ section:nth-child(2) img {
+     padding-top: 2.2em;
+ }
+
+}
