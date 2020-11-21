@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=430370a79b47b0401281e2917fbf7a2b&units=imperial";
+const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=430370a79b47b0401281e2917fbf7a2b&units=imperial";
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -7,7 +7,7 @@ fetch(apiURL)
 
         document.getElementById('current-temp').textContent = jsObject.main.temp;
 
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+        const imagesrc = '//openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
         const desc = jsObject.weather[0].description;  // note how we reference the weather array
 
         document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only

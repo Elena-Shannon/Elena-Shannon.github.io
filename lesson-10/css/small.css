@@ -112,10 +112,6 @@ main {
     min-height: 10rem;
 }
 
-section.forecast {
-    display: none;
-}
-
 .content {
     display: block;
     margin: 10px auto;
@@ -171,11 +167,6 @@ section.forecast {
     .difcolor {
         color: #fbbd17;
     }
-
-    .phone {
-        display: none;
-    }
-
 
 h2 {
     font-family: "Merriweather", Times, serif;
@@ -239,6 +230,26 @@ div.hideme {
     width: 100%;
     display: block;
 }
+
+
+ section div#gridTemp {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 1px;
+     margin: 0 30px 30px 30px;
+ }
+
+ .forecast section {
+     text-align: center;
+     border: 1px solid #aaa;
+ }
+
+  section.forecast div h4 {
+     background-color: #001f43;
+     color: white;
+     margin: 0;
+     padding: 1rem 0;
+ }
 
 
 

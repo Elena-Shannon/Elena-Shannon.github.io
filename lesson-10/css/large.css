@@ -30,11 +30,6 @@
          font-size: 1.1rem;
      }
 
-     /*.herodiv {
-           width: 1001px;
-           height: 370px;
-     }*/
-
      .summary {
          padding: 1.8rem;
          top: 75px;
@@ -45,5 +40,11 @@
          float: right;
          max-width: 450px;
          height: auto;
+     }
+
+
+     section div#gridTemp {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
      }
  }

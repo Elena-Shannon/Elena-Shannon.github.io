@@ -18,24 +18,10 @@
         font-size: 1em;
     }
 
-    section.forecast {
+    section div#gridTemp {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin-bottom: 30px;
-        padding: 0 50px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-section.forecast div {
-    text-align: center;
-    border: 1px solid #aaa;
-}
-
-section.forecast div h5 {
-    background-color: #001f43;
-    color:white;
-    margin: 0;
-    padding: 1rem 0;
-}
-
 
 .more_content {
      display: grid;
