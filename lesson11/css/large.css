@@ -1,0 +1,112 @@
+@media only screen and (min-width: 64rem) {
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: 0.6rem 1rem;
+    }
+
+    .motto {
+        font-size: 1.1rem;
+    }
+
+    .summary {
+        padding: 1.8rem;
+        top: 75px;
+        left: 75px;
+    }
+
+    .boys {
+        float: right;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .changeHead {
+        font-size: 1.8rem;
+    }
+
+
+    section div#gridTemp {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+/*----picture grid---*/
+
+      .grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+      }
+
+      figure:hover {
+          box-shadow: 0 0 70px #333;
+      }
+
+      figure img {
+          filter: blur(0em);
+          transition: filter 0.5s;
+      }
+
+      figure img[data-src] {
+          filter: blur(0.2em);
+      }
+
+/*------Towns-----*/
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.cards section {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards section:nth-child(even) {
+    flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.cards section img {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.cards div {
+    width: 100%;
+}
+
+div.cards section:nth-child(1) img {
+    padding-top: 2.4rem;
+}
+
+div.cards section:nth-child(2) img {
+    padding-top: 2.4rem;
+}
+
+}

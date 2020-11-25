@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="The weather website assignment for Elena Shannon for WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <title>WDD230 Storm Page</title>
+</head>
+
+<body>
+    <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+    <header class="clearfix">
+        <picture>
+            <source media="(max-width: 640px)" srcset="images/weather_logo85.png">
+            <source media="(max-width: 961px)" srcset="images/weather_logo110.png">
+            <img src="images/weather-logo.png" alt="logo">
+        </picture>
+        <section>
+            <h1>Idahoan Forecast</h1>
+            <div class="motto">Delivering the most accurate weather since 1998</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="preston.html">Preston</a></li>
+           <li><a href="sodasprings.html">Soda Springs</a></li>
+           <li><a href="fishhaven.html">Fish Haven</a></li>
+           <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+           <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="changeHead">Report a Storm</h2>
+
+        <form method="get" action="thanks-2.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top"> Full Name*: <input type="text" name="name" required pattern="[A-Za-z_ ]{5,}"
+                        placeholder="Jane Smith"></label>
+                <label class="top"> Email: <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top"> Phone*: <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">ZIP Code*: <input type="text" name="zip" placeholder="00000" required /></label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date: <input type="date" name="stormDate"></label>
+
+                <label class="top" for="type" id="types">Storm Type:
+                    <input list="storm-type" id="type" name="type" placeholder="Select one..."></label>
+                <datalist id="storm-type">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                    <option value="Other">
+                </datalist>
+
+                <label class="top">Storm Severity (1 to 10): </label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span>
+
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+
+                <label class="top">Storm Region: <select name="stRegion">
+                        <option value="">Select Region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+
+                <label class="danger">Are you or anyone else in danger?</label>
+                <label for="yes-danger" class="sbs"><input type="radio" id="yes-danger" name="danger" value="yes">
+                    Yes</label>
+                <label for="maybe-danger" class="sbs"><input type="radio" id="maybe-danger" name="danger" value="maybe">
+                    Maybe</label>
+                <label for="no-danger" class="sbs"><input type="radio" id="no-danger" name="danger" value="no">
+                    No</label>
+
+                <label class="top">Additional Comments (max 500 characters): </label>
+                <label>
+                    <textarea name="message" rows="12" cols="42" maxlength="500" placeholder="Type here..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit Storm Information" class="submitBtn">
+        </form>
+
+    </main>
+    <footer>
+        &copy;Idahoan Forecast | Elena Shannon
+        <div id="currentdate"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/range.js"></script>
+</body>
+
+</html>
