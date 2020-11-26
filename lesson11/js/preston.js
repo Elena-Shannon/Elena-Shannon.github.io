@@ -63,3 +63,36 @@ fetch(api)
             document.getElementById('gridTemp').appendChild(section);
         }
     });
+
+
+    //Events for Preston
+
+
+    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+    fetch(requestURL)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (jsonObject) {
+            console.log(jsonObject);
+
+            const towns = jsonObject['towns'];
+            let certainTowns = towns.filter(filterByName);
+
+            function filterByName(item) {
+                if (item.name == "Preston") {
+                    return true;
+                }
+            };
+
+            for (i = 0; i < certainTowns[0].events.length; i++) {
+                document.getElementById("prestonEvents").innerHTML += "<p>" + towns[5].events[i] + "</p>";
+            }
+
+        });
+
+
+
+
+

@@ -196,6 +196,11 @@ footer {
     padding: 10px;
 }
 
+.linksource {
+    color: white;
+    text-decoration: none;
+}
+
 .boys_photo {
     float: none;
     width: 100%;
@@ -452,6 +457,20 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+/*---------Events----------*/
+
+#prestonEvents, #sodaEvents, #havenEvents {
+    background-color:#234f79;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+
 }
 
 
