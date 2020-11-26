@@ -37,12 +37,6 @@ fetch(requestURL)
             image.setAttribute('src', "images/" + certainTowns[i].photo);
             image.setAttribute('alt', h3.textContent + " - " + certainTowns[i].order);
 
-
-            // card.appendChild(h3);
-            // card.appendChild(h4);
-            // card.appendChild(yearFounded);
-            // card.appendChild(currentPopulation);
-            // card.appendChild(averageRainfall);
             textContainer.append(h3, h4, yearFounded, currentPopulation, averageRainfall);
             card.append(textContainer, image);
 
