@@ -64,6 +64,11 @@ header h1 {
     font-size: 0.8rem;
 }
 
+#colorfix {
+    color: #a86f0c;
+    font-size: 1.4rem;
+}
+
 /*----------- NAVIGATION --------------*/
 nav button {
     margin: .2rem 2%;
