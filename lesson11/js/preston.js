@@ -20,7 +20,7 @@ fetch(apiURL)
           if (t <= 50 && s > 3) {
               document.getElementById("windChill").textContent = windChill + "\u00B0 F";
           } else {
-              document.getElementById("windChill").textContent = "N/A";
+              document.getElementById("windChill").textContent = "No windchill today";
           }
 
     });

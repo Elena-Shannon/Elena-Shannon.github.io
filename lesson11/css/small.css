@@ -64,9 +64,19 @@ header h1 {
     font-size: 0.8rem;
 }
 
-#colorfix {
+.colorfix {
     color:#c05f0c;
     font-size: 1.4rem;
+    text-align: center;
+}
+
+.newHead {
+    font-family: "Merriweather",
+    'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #001f43;
+
 }
 
 /*----------- NAVIGATION --------------*/
