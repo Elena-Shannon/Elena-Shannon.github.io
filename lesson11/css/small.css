@@ -65,15 +65,16 @@ header h1 {
 }
 
 #colorfix {
-    color: #a86f0c;
+    color:#c05f0c;
     font-size: 1.4rem;
 }
 
 /*----------- NAVIGATION --------------*/
 nav button {
     margin: .2rem 2%;
-    background-color: transparent;
-    border: none;
+    background-color:#001f43;
+    border: transparent;
+    border-radius: 5px;
     font-size: 1.6rem;
     color: #fff;
 }
@@ -111,6 +112,8 @@ nav ul li.active a {
 nav ul.hide {
     display: none;
 }
+
+
 
 /*----------- MAIN --------------*/
 main {
@@ -181,7 +184,8 @@ h2 {
     font-family: "Merriweather", Times, serif;
     font-weight: 600;
     font-size: 1.4rem;
-    color: #c57e00;
+    color: #c05f0c;
+    /*#bd7e11;*/
     text-align: center;
     padding: 10px;
 }
@@ -387,7 +391,7 @@ form fieldset {
 
 form legend {
     background-color: white;
-    color: #c65e00;
+    color: #c05f0c;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px;
@@ -426,14 +430,14 @@ form label.sbs {
 form label.danger {
     display: block;
     padding-top: 1rem;
-    color: #c65e00;
+    color: #c05f0c;
     font-weight: 800;
     font-size: 1rem;
 }
 
 form input.submitBtn {
     border: none;
-    background-color: #c57e00;
+    background-color:#c05f0c;
     color: white;
     font-weight: bold;
     border-radius: 0.5rem;
