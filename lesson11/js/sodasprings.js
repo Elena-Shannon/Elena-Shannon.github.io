@@ -5,7 +5,6 @@ const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5607916&appid=43037
 fetch(apiURL)
     .then((response) => response.json())
     .then((weatherInfo) => {
-        console.log(weatherInfo);
 
         document.getElementById('currentCond').innerHTML = weatherInfo.weather[0].main;
         document.getElementById('highT').innerHTML = Math.round(weatherInfo.main.temp) + "\u00B0 F";
@@ -72,7 +71,7 @@ fetch(api)
             return response.json();
         })
         .then(function (jsonObject) {
-            console.log(jsonObject);
+
 
             const towns = jsonObject['towns'];
             let certainTowns = towns.filter(filterByName);
