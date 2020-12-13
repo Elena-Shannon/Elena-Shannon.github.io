@@ -1,0 +1,89 @@
+@media only screen and (min-width: 64rem) {
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: 0.6rem 1rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    .motto {
+        font-size: 2.5rem;
+    }
+
+    #praise {
+        font-size: 1.7rem;
+    }
+
+    .icon-bar {
+        position: fixed;
+        top: 40%;
+    }
+
+    .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        margin: 2px;
+        transition: all 0.3s;
+        color: white;
+        font-size: 20px;
+    }
+
+
+    .icon-bar a:hover {
+        background-color: #01BABC;
+    }
+
+    .facebook,
+    .twitter,
+    .google,
+    .pinterest {
+        background: #37707D;
+        color: white;
+    }
+
+     .rentals {
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+
+     #list_width {
+         padding: 38px 110px;
+         margin-right: 8px;
+     }
+
+     #reserv_flex {
+         display: flex;
+         flex-direction: row;
+     }
+
+
+     header h2 {
+         margin-top: 4rem;
+         margin-right: 4rem;
+     }
+
+}

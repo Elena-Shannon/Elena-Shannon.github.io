@@ -1,0 +1,88 @@
+@media only screen and (min-width: 37.5em) {
+
+    header img {
+        float: left;
+        margin-right: 20px;
+        width: 130px;
+    }
+
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+
+    .motto {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+    }
+
+    .beach_photo {
+        float: right;
+        max-width: 350px;
+        height: auto;
+        margin: 1.1rem .7rem .7rem .7rem;
+    }
+
+    footer div.grids {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+     .rentals {
+         grid-template-columns: 1fr 1fr;
+     }
+
+     iframe {
+         text-align: center;
+         width: 60%;
+     }
+
+
+ section div#gridTemp {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     margin-left: 15rem;
+     margin-right: 15rem;
+     padding-bottom: 2rem;
+ }
+
+ .infoGrid {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .rentalForm {
+     width: 450px;
+     padding: 30px;
+     /*display: block;*/
+     margin: 0 auto;
+     margin-bottom: 2rem;
+     margin-top: 2rem;
+ }
+
+ #list_width {
+
+    font-size: 1.2rem;
+    padding: 15px 45px;
+ }
+
+ .scooterGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+
+ }
+
+ .button {
+       padding: 20px;
+ }
+
+ }
+
+
+

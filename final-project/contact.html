@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="The final website assignment for Elena Shannon for WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <title>WDD230 ~Scoots rentals Contact Us Page</title>
+</head>
+
+<body>
+
+    <header class="clearfix">
+        <a href="index.html">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/scooter_logo_85.png">
+                <source media="(max-width: 800px)" srcset="images/scooter_logo_110.png">
+                <img src="images/scooter_logo.png" alt="logo with the scooter">
+            </picture>
+        </a>
+            <h1>~Scoots</h1>
+    </header>
+
+     <div class="icon-bar">
+         <a href="http://www.facebook.com" class="facebook" target="blank"><i class="fa fa-facebook"></i></a>
+         <a href="http://www.twitter.com" class="twitter" target="blank"><i class="fa fa-twitter"></i></a>
+         <a href="http://www.google.com" class="google" target="blank"><i class="fa fa-google"></i></a>
+         <a href="http://www.pinterest.com" class="pinterest" target="blank"><i class="fa fa-pinterest"></i></a>
+     </div>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="rentals.html">RENTALS</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a></li>
+            <li><a href="tours.html">TOURS</a></li>
+            <li class="active"><a href="contact.html">CONTACT</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <div class="styling">
+        <h2>Contact form </h2>
+        <p>Hello! If you have any questions, inquiries, or want to leave a feedback, fill in the form below. We will get back to you within 1-2 business days. If you need an answer sooner, call us at either of the locations during business hours. Thank you for choosing <strong>~Scoots!</strong></p>
+
+         <section>
+            <div class="position">
+             <div class="rentalForm">
+            <h3>Contact</h3>
+            <form method="get" action="response.html">
+                <div class="subsection">
+                    <label class="top">Full Name&#x2a;:<input type="text" name="fullname" placeholder="Full Name" pattern="[A-z\s]{5,}" required></label>
+                    <label class="top">Email&#x2a;:<input type="email" name="email" placeholder="someone@email.com" required></label>
+                    <label class="top">Phone Number&#x2a;:<input type="tel" name="phone" required></label>
+                     <label>
+                     Add your comment:
+                    <textarea name="additionalInfo" placeholder="Type here..."></textarea>
+                    </label>
+                </div>
+
+                    <input type="submit" value="Send" class="submitButton">
+             </form>
+            </div>
+          </div>
+         </section>
+
+           <h2>Our locations</h2>
+
+         <section class="cont_inf">
+
+        <div>
+        <p> &#128172;
+            +52-987-8989898</p>
+            <p>PLAZA DE LA CONSTITUCION NO. 8, CENTRO, 77645</p>
+            <p>San Miguel de Cozumel, Q.R.</p>
+            <p>Weekdays 9:00 a.m. to 8:00 p.m.</p>
+            <p>Saturday 11:00 a.m. to 8:00 p.m.
+            <p>Closed Sunday</p>
+
+           <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d5323.336330604654!2d-86.9885553370801!3d20.458370537119965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scozumel!5e0!3m2!1sen!2sus!4v1607645017961!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+        <div>
+        <p> &#128172;
+            +52-987-232323232</p>
+            <p>CARRETERA COSTERA SUR KM. 6, 77600,</p>
+            <p>San Miguel de Cozumel, Q.R.</p>
+            <p>Weekdays 9:00 a.m. to 8:00 p.m.</p>
+            <p>Saturday 11:00 a.m. to 8:00 p.m.</p>
+           <p>Closed Sunday</p>
+
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.859077785354!2d-86.95296768503218!3d20.512002410593794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sus!4v1607461841422!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        </section>
+       </div>
+
+    </main>
+
+    <footer>
+
+        <div>&copy;2020 ~Scoots. All Rights Reserved. </div>
+        <div><a class="attrib" href="attributions.html" target="blank">Attributions</a> | Designed and Developed by Elena Shannon</div>
+        <div>
+            Last modified:
+        <span id="modiDate"></span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forecast.js"></script>
+
+</body>
+
+</html>

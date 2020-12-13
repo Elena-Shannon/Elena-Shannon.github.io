@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="The final website assignment for Elena Shannon for WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <title>WDD230 ~Scoots rentals Attributions Page</title>
+</head>
+
+<body>
+
+    <header class="clearfix">
+        <a href="index.html">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/scooter_logo_85.png">
+                <source media="(max-width: 800px)" srcset="images/scooter_logo_110.png">
+                <img src="images/scooter_logo.png" alt="logo with the scooter">
+            </picture>
+        </a>
+            <h1>~Scoots</h1>
+    </header>
+
+     <div class="icon-bar">
+         <a href="http://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
+         <a href="http://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+         <a href="http://www.google.com" class="google"><i class="fa fa-google"></i></a>
+         <a href="http://www.pinterest.com" class="pinterest"><i class="fa fa-pinterest"></i></a>
+     </div>
+
+<nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="rentals.html">RENTALS</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a></li>
+            <li><a href="tours.html">TOURS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+
+        </ul>
+</nav>
+
+<main>
+<div class="styling">
+    <h2>Resources</h2>
+    <h3>The images and information for this website came from the following sources:</h3>
+    <ul>
+        <li><a href="https://www.pexels.com/search/scooters/" target="blank">Pexels website for stock images</a></li>
+        <li><a href="https://pixabay.com/photos/search/scooter/" target="blank">Pixabay for stock images</a></li>
+        <li><a href="https://wikipedia.com/" target="blank">Wikipedia for rental images and info on Cozumel</a></li>
+        <li><a href="https://www.utvsource.com/texas-outdoors-honda-pioneer-1000-5-crew-ranch-armor-metal-top/?sku=HR21&gclid=Cj0KCQiA5bz-BRD-ARIsABjT4ng20pWskWyRud4aisei78-1FbM4VZaomW9Tq8719bcQc1Z2ewndNAwaAmR9EALw_wcB" target="blank">UTV Source Shop for Honda Pioneer image</a></li>
+        <li><a href="https://beachtobayscooters.com/scooters/rental-agreement/" target="blank">Beach to Bays Scooters for scooters' Rental agreement info ideas</a></li>
+        <li><a href="https://www.planetware.com/tourist-attractions-/cozumel-mex-qr-coz.htm">Planet Ware for main Cozumel attractions</a></li>
+        <li><a href="https://openweathermap.org/api">Open Weather for the API weather info</a></li>
+    </ul>
+    <br>
+</div>
+</main>
+
+    <footer>
+        <div>&copy;2020 ~Scoots. All Rights Reserved.</div>
+        <div><a class="attrib" href="attributions.html" target="blank">Attributions</a> | Designed and Developed by Elena Shannon</div>
+        <div>
+            Last modified:
+        <span id="modiDate"></span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/main.js"></script>
+     <script src="js/forecast.js"></script>
+
+</body>
+
+</html>

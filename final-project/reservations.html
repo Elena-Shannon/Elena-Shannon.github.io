@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="The final website assignment for Elena Shannon for WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <title>WDD230 ~Scoots rentals Reservations Page</title>
+</head>
+
+<body>
+
+    <header class="clearfix">
+        <a href="index.html">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/scooter_logo_85.png">
+                <source media="(max-width: 800px)" srcset="images/scooter_logo_110.png">
+                <img src="images/scooter_logo.png" alt="logo with the scooter">
+            </picture>
+        </a>
+            <h1>~Scoots</h1>
+    </header>
+
+     <div class="icon-bar">
+         <a href="http://www.facebook.com" class="facebook" target="blank"><i class="fa fa-facebook"></i></a>
+         <a href="http://www.twitter.com" class="twitter" target="blank"><i class="fa fa-twitter"></i></a>
+         <a href="http://www.google.com" class="google" target="blank"><i class="fa fa-google"></i></a>
+         <a href="http://www.pinterest.com" class="pinterest" target="blank"><i class="fa fa-pinterest"></i></a>
+     </div>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="rentals.html">RENTALS</a></li>
+            <li class="active"><a href="reservations.html">RESERVATIONS</a></li>
+            <li><a href="tours.html">TOURS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <div id="reserv_flex">
+         <section class="contact_page">
+             <div class="styling">
+            <h2>Rental Terms and Agreement:</h2>
+            <ul class="bullet">
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
+
+            <h3>Rental, Indemnity and Warranties</h3>
+            <p>  This is a contract for the rental of the Scooter. We may repossess the Scooter at your expense without notice to you, if the Scooter is
+abandoned or used in violation of law or this Agreement. You agree to indemnify us,
+defend us and hold us harmless from all claims, liability, costs and attorney fees we incur resulting from, or arising out of, this rental and your use of the Scooter.
+We make no warranties, express, implied or apparent, regarding the Scooter, no warranty of merchantability and no warranty that the Scooter is fit for a particular purpose.</p>
+
+            <h3>Responsibility for Scooter Damage or Loss </h3>
+             <p>You are responsible for all damage to or loss of the Scooter, including the cost of repair, or the actual cash retail value of the Scooter on the date of the loss if the Scooter is not repairable.</p>
+
+             <h3>Assumption of risk</h3>
+             <p>  You understand that there are possible
+risks to yourself and others, including the risks of death, serious bodily injury, and property damage that may be
+associated with operating a scooter.</p>
+            </div>
+        </section>
+
+
+         <section>
+             <div class="rentalForm">
+            <h3>Rental Form</h3>
+
+            <form method="get" action="response.html">
+
+                <div class="section">Personal Information</div>
+                <div class="subsection">
+                    <label class="top">Full Name&#x2a;:<input type="text" name="fullname" placeholder="Full Name" pattern="[A-z\s]{5,}" required></label>
+                    <label>Email:<input type="email" name="email" placeholder="someone@email.com"></label>
+                    <label class="top">Phone Number&#x2a;:<input type="tel" name="phone" required></label>
+                    <label>Home State/Country:<input type="text" name="location"></label>
+                </div>
+
+                <div class="section">Reservation details:</div>
+                <div class="subsection">
+                <label class="top">Reservation date&#x2a;:<input type="date" name="date" required></label>
+
+                <label class="top">Return date&#x2a;:<input type="date" name="date" required></label>
+
+
+                <label>
+                Rental Type:
+                    <select name="type">
+                    <option value="select" disabled selected>Select Type</option>
+                    <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                    <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                    <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                    <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                    <option value="Jeep Wrangler - 4 door">Jeep Wrangler - 4 door</option>
+                    <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                    </select>
+                </label>
+
+                <label for="quantity">Number of vehicles per group (1-5):
+                <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </label>
+
+                    <label>
+                Location drop-off request:
+                    <select name="region">
+                    <option value="select" disabled selected>Select Location</option>
+                    <option value="PLAZA DE LA CONSTITUCION">PLAZA DE LA CONSTITUCION</option>
+                    <option value="CARRETERA COSTERA">CARRETERA COSTERA</option>
+                    </select></label>
+
+                </div>
+                <div class="section">Additional Information:</div>
+                <div class="subsection">
+                    <label>Cruise Line (if applicable):<input type="text" name="cruiseline">
+                    </label>
+                    <label>
+                Comments/special accomodations request:
+                    <textarea name="additionalInfo" placeholder="Type here..."></textarea>
+
+                </label>
+                </div>
+
+                <input type="submit" value="Send" class="submitButton">
+
+            </form>
+        </div>
+         </section>
+
+    </div>
+
+    </main>
+
+    <footer>
+
+       <div class="grids">
+            <div class="contact">
+        <p> &#128172;
+            +52-987-8989898</p>
+            <p>PLAZA DE LA CONSTITUCION NO. 8, CENTRO, 77645</p>
+            <p>San Miguel de Cozumel, Q.R.</p>
+            <p>Weekdays 9:00 a.m. to 8:00 p.m.</p>
+            <p>Saturday 11:00 a.m. to 8:00 p.m.
+            <p>Closed Sunday</p>
+        </div>
+
+        <div class="contact">
+        <p> &#128172;
+            +52-987-232323232</p>
+            <p>CARRETERA COSTERA SUR KM. 6, 77600,</p>
+            <p>San Miguel de Cozumel, Q.R.</p>
+            <p>Weekdays 9:00 a.m. to 8:00 p.m.</p>
+            <p>Saturday 11:00 a.m. to 8:00 p.m.</p>
+           <p>Closed Sunday</p>
+        </div>
+     </div>
+        <div>
+            <a href="http://www.facebook.com" target="blank"><img src='images/facebook.png' alt="facebook symbol" /></a>
+            <a href="http://www.pinterest.com" target="blank"><img src='images/pinterest.png' alt="pinterest symbol" /></a>
+            <a href="http://www.twitter.com" target="blank"><img src='images/twitter.png' alt="twitter symbol" /></a>
+        </div>
+            <hr>
+            <br>
+        <div>&copy;2020 ~Scoots. All Rights Reserved. </div>
+        <div><a class="attrib" href="attributions.html" target="blank">Attributions</a> | Designed and Developed by Elena Shannon</div>
+        <div>
+            Last modified:
+        <span id="modiDate"></span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forecast.js"></script>
+
+</body>
+
+</html>

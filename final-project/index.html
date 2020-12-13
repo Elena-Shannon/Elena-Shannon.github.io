@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description"
+        content="The final website assignment for Elena Shannon for WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <title>WDD230 ~Scoots rentals Site Home Page</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <a href="index.html">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/scooter_logo_85.png">
+                <source media="(max-width: 800px)" srcset="images/scooter_logo_110.png">
+                <img src="images/scooter_logo.png" alt="logo with the scooter">
+            </picture>
+        </a>
+            <h1>~Scoots</h1>
+
+    </header>
+
+     <div class="icon-bar">
+         <a href="http://www.facebook.com" class="facebook" target="blank"><i class="fa fa-facebook"></i></a>
+         <a href="http://www.twitter.com" class="twitter" target="blank"><i class="fa fa-twitter"></i></a>
+         <a href="http://www.google.com" class="google" target="blank"><i class="fa fa-google"></i></a>
+         <a href="http://www.pinterest.com" class="pinterest" target="blank"><i class="fa fa-pinterest"></i></a>
+     </div>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="rentals.html">RENTALS</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a></li>
+            <li><a href="tours.html">TOURS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="text_position">
+           <picture class="image_center">
+                <source media="(max-width: 500px)" srcset="images/moto-500.jpg">
+                <source media="(max-width: 800px)" srcset="images/moto-800.jpg">
+                <img class="im_width" src=" images/moto.jpg" alt="motocycle on the beach">
+            </picture>
+
+            <div class="motto">
+                <p>Explore our beautiful</p>
+                <p>Cozumel with us!</p>
+
+                <form action="reservations.html">
+                <button type="submit" class="button">Reserve Today</button>
+                </form>
+
+            </div>
+        </div>
+
+        <section>
+             <h2>Welcome to Cozumel!</h2>
+
+                <div class="infoGrid">
+                    <div>
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="images/beach-250.jpg">
+                        <img class="beach_photo" src="images/beach.jpg"
+                            alt="beach with palms">
+                    </picture>
+                    <p id="header_style">
+                    We are so glad that you decided to visit our beautiful island Cozumel.<strong> Welcome!</strong> Our island is located in the Caribbean Sea along the eastern side of the Yucatan Peninsula about 51 miles south of Cancún and 12 miles from the mainland. The island is only about 30 miles long and just under 10 miles wide. Thousands of tourists visit it every year. Cozumel means Land of Swallows in the Mayan Language (Cuzam: swallow, Luumil: place). It is known for its incredible weather year around (check out the 3-day forecast below), beaches with white fine sand, spectacular coral reefs, abundant marine life, and the crystal-clear turquoise water of the Carribean. Cozumel is a place to explore for days. There are a million reasons to visit Cozumel. If you decide to travel the beauitful streets of San Miguel de Cozumel or enjoy the view along the shore, our scooters will be perfect for such excursions. We have various rental options available (to learn more details about our options and prices, click <a href="rentals.html">here):</a>
+                    </p>
+                </div>
+                    <div class="summary">
+                       <h3>Current Weather Conditions</h3>
+                <p>Currently: <span id="currentCond"></span></p>
+                <p>Temperature: <span id="highT"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                    </div>
+                </div>
+
+             <div class="scooterGrid">
+                <div>
+                     <picture>
+                         <source media="(max-width: 500px)" srcset="images/scootershop-300.jpg">
+                         <source media="(max-width: 800px)" srcset="images/scootershop-350.jpg">
+                         <img class="shop_photo" src="images/scootershop.jpg" alt="colorful scooters on the street">
+                     </picture>
+                </div>
+                <div>
+                     <ul id="list_width">
+                     <li>Honda Metropolitan (49cc)</li>
+                     <li>Honda Dio (110cc)</li>
+                     <li>Honda PCX150 (149cc)</li>
+                     <li>Honda Pioneer 1000 </li>
+                     <li>4-door Jeep Wrangler </li>
+                     <li>2-door Jeep Wrangler </li>
+                     </ul>
+                    </div>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h2>3-day local forecast</h2>
+            <div id="gridTemp"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="grids">
+            <div class="contact">
+        <p> &#128172;
+            +52-987-8989898</p>
+            <p>PLAZA DE LA CONSTITUCION NO. 8, CENTRO, 77645</p>
+            <p>San Miguel de Cozumel, Q.R.</p>
+            <p>Weekdays 9:00 a.m. to 8:00 p.m.</p>
+            <p>Saturday 11:00 a.m. to 8:00 p.m.
+            <p>Closed Sunday</p>
+        </div>
+
+        <div class="contact">
+        <p> &#128172;
+            +52-987-232323232</p>
+            <p>CARRETERA COSTERA SUR KM. 6, 77600,</p>
+            <p>San Miguel de Cozumel, Q.R.</p>
+            <p>Weekdays 9:00 a.m. to 8:00 p.m.</p>
+            <p>Saturday 11:00 a.m. to 8:00 p.m.</p>
+           <p>Closed Sunday</p>
+        </div>
+     </div>
+        <div>
+            <a href="http://www.facebook.com" target="blank"><img src='images/facebook.png' alt="facebook symbol" /></a>
+            <a href="http://www.pinterest.com" target="blank"><img src='images/pinterest.png' alt="pinterest symbol" /></a>
+            <a href="http://www.twitter.com" target="blank"><img src='images/twitter.png' alt="twitter symbol" /></a>
+        </div>
+            <hr>
+            <br>
+        <div>&copy;2020 ~Scoots. All Rights Reserved. </div>
+        <div><a class="attrib" href="attributions.html" target="blank">Attributions</a> | Designed and Developed by Elena Shannon</div>
+        <div>
+            Last modified:
+        <span id="modiDate"></span>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forecast.js"></script>
+
+</body>
+
+</html>
