@@ -73,12 +73,14 @@ footer {
 .contact {
     font-size: 0.9rem;
     font-weight: 600;
-    margin-top: 25px;
+    margin: 25px;
+
 }
 
 div.grids {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
 }
 
 
