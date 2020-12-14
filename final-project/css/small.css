@@ -304,9 +304,16 @@ section div.contact_page {
     padding: 20px;
 
 }
+ ul {
+     text-indent: 3px;
+ }
 
 ul.bullet {
     list-style-type: square;
+}
+
+ul.bullet li {
+    margin-bottom: 1rem;
 }
 
 /*---Reservation page form---*/
